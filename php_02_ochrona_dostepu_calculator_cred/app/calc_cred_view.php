@@ -35,11 +35,13 @@
 <?php
 //wyświeltenie listy błędów, jeśli istnieją
 if (isset($messages)) {
+	if (count ($messages) > 0) {
 	echo '<ol style="margin-top: 1em; padding: 1em 1em 1em 2em; border-radius: 0.5em; background-color: #f88; width:25em;">';
 	foreach ( $messages as $key => $msg ) {
 		echo '<li>'.$msg.'</li>';
 	}
 	echo '</ol>';
+	}
 }
 ?>
 
