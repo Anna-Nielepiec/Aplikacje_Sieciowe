@@ -28,14 +28,14 @@
 	</fieldset>
 	<input id="id_oprocentowanie" type="text" name="oprocentowanie" value="<?php if (isset($oprocentowanie)) print($oprocentowanie); ?>" /><br />
 	
-		<input type="submit" value="Oblicz rate" />
+		<input type="submit" value="Oblicz rate" class="pure-button pure-button-primary" />
 </form>	
 	
 
 <?php
 //wyświeltenie listy błędów, jeśli istnieją
 if (isset($messages)) {
-	echo '<ol style="margin: 20px; padding: 10px 10px 10px 30px; border-radius: 5px; background-color: #f88; width:300px;">';
+	echo '<ol style="margin-top: 1em; padding: 1em 1em 1em 2em; border-radius: 0.5em; background-color: #f88; width:25em;">';
 	foreach ( $messages as $key => $msg ) {
 		echo '<li>'.$msg.'</li>';
 	}
