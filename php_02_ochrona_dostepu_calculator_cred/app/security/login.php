@@ -39,11 +39,7 @@ function validateLogin(&$form,&$messages){
 		$_SESSION['role'] = 'user';
 		return true;
 	}
-	if ($form['login'] == "manager" && $form['pass'] == "manager") {
-		session_start();
-		$_SESSION['role'] = 'manager';
-		return true;
-	}
+	
 	
 	$messages [] = 'Niepoprawny login lub hasło';
 	return false; 
