@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<title>{$page_title|default:"Tytuł domyślny"}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{$conf->app_url}/assets/css/main.css" />
+        <link rel="stylesheet" href="{$conf->app_url}/assets/css/style.css" />
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1>{$page_title|default:"Tytuł domyślny"}</h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="#">Home</a></li>	
+							<li>
+								<a href="#">Elements</a></li>
+							
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					<h2>{$page_title|default:"Tytuł domyślny"}</h2>
+					<p>{$page_description|default:"Opis domyślny"}</p>
+					<ul class="actions special">
+						<li><a href="#main" class="button primary">Przejdz do kalkulatora</a></li>
+					</ul>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container">
+				
+					<section class="box">
+                        {block name=content} Domyślna treść zawartości .... {/block}
+					</section>
+
+			<!-- Footer -->
+				<footer id="footer">					
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+
+</html>
